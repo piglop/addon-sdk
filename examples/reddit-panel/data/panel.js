@@ -29,3 +29,8 @@ $(window).click(function (event) {
 // background color is dark grey, but Reddit expects its background to be white
 // and looks odd when it isn't, so set it to white.
 $("body").css("background", "white");
+
+$("#form").submit(function() {
+  console.log("submit");
+  return false;
+});
