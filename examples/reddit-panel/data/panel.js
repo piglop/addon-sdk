@@ -30,7 +30,9 @@ $(window).click(function (event) {
 // and looks odd when it isn't, so set it to white.
 $("body").css("background", "white");
 
+count = 0;
 $("#form").submit(function() {
-  console.log("submit");
+  count++;
+  $(this).append("<br/>submit " + count);
   return false;
 });
